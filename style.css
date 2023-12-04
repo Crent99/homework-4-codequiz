@@ -1,24 +1,34 @@
-*, * ::before, * ::after {
+:root {
+    background-color: lightgrey;
+}
+
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
     font-family:'Times New Roman', Times, serif;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+h1 {
+    font-size: 5.4rem;
+    color: navy;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
 }
 
 .container {
-    width: 500px;
-    max-width: 80%;
-    background-color: white;
-    border-radius: 25px;
-    padding: 350px;
-    box-shadow: 0 0 10px 2px;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
