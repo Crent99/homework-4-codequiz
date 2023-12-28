@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-us">
+  
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Colin's Coding Quiz</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Colin's Code Quiz</title>
 </head>
 
 <body>
-
-    <a href="HighScores.html">HighScores!</a>
-
-    <div class="container">
-        <div id="presentTime"></div>
-        <div id="questionsDiv">
-            <h1>Colin's Coding Quiz</h1>
-            <p>Try to answer the following code-related questions within the time limit. Time will be subtracted for incorrect answers. Start when ready!</p>
-            <ul id="optionsUl"></ul>
-            <button id="startTime">Start</button>
+    <header>
+        <h1>Colin's Code Quiz</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="start-screen">
+                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                <button id="start">Start Quiz</button>
+            </div>
+            <div class="quiz-screen hide">
+                <p id="question"></p>
+                <div id="choices">
+                    <button class="choice"></button>
+                    <button class="choice"></button>
+                    <button class="choice"></button>
+                    <button class="choice"></button>
+                </div>
+            </div>
+            <div class="end-screen hide">
+                <p id="final-score"></p>
+                <p>Enter initials: <input id="initials" type="text" /></p>
+                <button id="submit">Submit</button>
+            </div>
         </div>
-
-
-    </div>
-
-    <script src="questions.js"></script>
-
-</body>   
-</html>
+    </main>
+    <footer>
+        <p>
+            <a href=""></a>"
+</body>
+  
