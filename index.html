@@ -10,33 +10,24 @@
 </head>
 
 <body>
-    <header>
-        <h1>Colin's Code Quiz</h1>
-    </header>
-    <main>
-        <div class="container">
-            <div class="start-screen">
-                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-                <button id="start">Start Quiz</button>
-            </div>
-            <div class="quiz-screen hide">
-                <p id="question"></p>
-                <div id="choices">
-                    <button class="choice"></button>
-                    <button class="choice"></button>
-                    <button class="choice"></button>
-                    <button class="choice"></button>
-                </div>
-            </div>
-            <div class="end-screen hide">
-                <p id="final-score"></p>
-                <p>Enter initials: <input id="initials" type="text" /></p>
-                <button id="submit">Submit</button>
-            </div>
+    <!-- link to highscores -->
+    <a href="highscores.html">Highscores</a>
+    <!-- this is a container -->
+    <div id="container"> 
+        <div id="currentTime"></div>
+        <div id="questionsDiv">
+            <h1>Colin's Coding Quiz</h1>
+            <p>Try to answer the following code-related questions within the time limit. Time will be taken off for incorrect answers so choose wisely! </p>
+            <ul id="choicesUl"></ul>
+            <!-- buttons -->
+            <button id="startBtn">Start Quiz</button>
         </div>
-    </main>
-    <footer>
-        <p>
-            <a href=""></a>"
+    </div>
+
+    <script src="assets/js/questions.js"></script>
+
 </body>
+
+</html>
+
   
