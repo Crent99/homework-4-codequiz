@@ -4,3 +4,7 @@ Decsription: This webpage is a quiz on coding that used HTML, CSS, and JavaScrip
 
 link: [](https://crent99.github.io/homework-4-codequiz/)https://crent99.github.io/homework-4-codequiz/
 
+images below show how webpage works:
+
+
+
