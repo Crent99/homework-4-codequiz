@@ -66,4 +66,34 @@ li:hover {
     cursor: pointer;
 }
 
+#mustReturn {
+    background-color: black;
+    margin-left: 35%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
+
+#mustReturn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 gold;
+}
+
+#clear {
+    background-color: black;
+    margin-left: 35%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+    margin-left: 135px;
+}
+
+#clear:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 gold;
+}
+
+
+
+
 

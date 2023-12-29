@@ -35,13 +35,13 @@ var timer = document.querySelector("#startBtn");
 var questionsDiv = document.querySelector("#questionsDiv");
 var container = document.querySelector("#container");
 
-// Declares Timer variables:
+// Declares Timer variables
 var secondsLeft = 61;
 var holdInterval = 0;
 var penalty = 15;
 var ulCreate = document.createElement("ul");
 
-// Timer starts on button click
+// Timer starts on click of button
 timer.addEventListener("click", function () {
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
@@ -116,14 +116,14 @@ function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
 
-    // Heading:
+    
     var createH1 = document.createElement("h1");
     createH1.setAttribute("id", "createH1");
     createH1.textContent = "All done!"
 
     questionsDiv.appendChild(createH1);
 
-    // Paragraph:
+    
     var createP = document.createElement("p");
     createP.setAttribute("id", "createP");
 
@@ -152,7 +152,7 @@ function allDone() {
 
     questionsDiv.appendChild(createInput);
 
-    // Submit:
+    
     var createSubmit = document.createElement("button");
     createSubmit.setAttribute("type", "submit");
     createSubmit.setAttribute("id", "Submit");
@@ -184,7 +184,7 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            // Travels to final page:
+            // Travels to final page
             window.location.replace("./highscores.html");
         }
     });
